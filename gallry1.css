@@ -1,0 +1,399 @@
+
+
+body{
+    overflow-x: hidden;
+}
+/*** Service ***/
+.service-item {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    overflow-x: hidden;
+
+}
+
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item .service-img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.service-item .service-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white; /* Remove the background color */
+    transition: .5s ease-out;
+    z-index: 2;
+}
+
+.service-icon {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: transparent; /* Set background to transparent */
+}
+
+.service-item:hover .service-img::after {
+    width: 0;
+    left: auto;
+    right: 0;
+}
+
+.service-item .service-text55 .service-icon22 {
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    border-radius: 140px;
+    margin-left: -280px;
+}
+
+/* Default styles for h2, h3, and h4 */
+.service-item h2, 
+.service-item h3, 
+.service-item h4 {
+    color: black; /* Default color for the headings */
+    transition: color 0.3s ease; /* Smooth transition effect */
+    font-size: 16px;
+}
+
+/* Hover effect on the service-item */
+.service-item:hover h2, 
+.service-item:hover h3, 
+.service-item:hover h4 {
+    color: white; /* Change to white on hover */
+}
+
+/* Hide the Learn More button initially */
+.learn-more-btn {
+    display: none;
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin-top: 70px;
+    margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+/* Show the Learn More button on hover */
+.service-item:hover .learn-more-btn {
+    display: inline-block;
+    margin-top: 70px;
+    background-color: #ffc107;
+}
+
+/* Additional hover effect to zoom the image */
+.service-item:hover .service-img img {
+    transform: scale(1.05);
+}
+
+/* Smooth transition for the image zoom */
+.service-img img {
+    transition: transform 0.3s ease;
+}
+
+.service-icon {
+    width: 70px; /* Fixed width for the icon */
+    height: 100px; /* Fixed height for the icon */
+    overflow: hidden; /* Prevents overflow of the image */
+    border-radius: 50%; 
+    display: flex; /* Flexbox layout for centering */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    margin-right: 400px; 
+    margin-top: -30px;
+}
+
+.service-icon img {
+    width: 100%; /* Full width to fill the container */
+    height: 100%; /* Full height to fill the container */
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 50%; /* Keeps the image circular */
+}
+
+.service-container44 {
+    padding: 5rem 1rem;
+}
+
+.service-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff; /* Bootstrap primary color */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.service-header h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+
+.service-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between items */
+    justify-content: center; /* Center align items */
+}
+
+.service-item {
+    flex: 1 1 30%; /* Grow to fill space, minimum width 30% */
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* To keep images within rounded corners */
+    transition: transform 0.3s; /* Animation for hover */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.service-img img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+}
+
+.service-text55 {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text */
+    height: 330px;
+}
+
+.service-icon {
+    display: flex; /* Flexbox layout for centering */
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    margin: 0 auto; /* Center the icon container */
+}
+
+.service-icon img {
+    border-radius: 50%; /* Make icon circular */
+    width: auto; /* Allow width to adjust automatically */
+    height: 73px; /* Default icon height */
+    max-width: 100%; /* Ensure image does not exceed its container */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.service-text55 {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    padding: 1rem; /* Add padding */
+    text-align: center; /* Center align text */
+}
+
+.service-text55 h5 {
+    margin: 1rem 0; /* Space around heading */
+}
+
+.service-text55 p {
+    text-align: center; /* Center align paragraph text */
+    margin-bottom: 1.5rem; /* Space below paragraph */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* Laptops */
+    .service-icon img {
+        height: 70px; /* Adjust icon size for laptops */
+        position: sticky;
+    }
+
+    .service-text55 h5 {
+        font-size: 1.1rem; /* Adjust heading size for laptops */
+    }
+
+    .service-text55 p {
+        font-size: 0.9rem; /* Adjust paragraph size for laptops */
+    }
+}
+
+@media (max-width: 768px) { /* Tablets */
+    .service-icon img {
+        height: 60px; /* Adjust icon size for tablets */
+    }
+
+    .service-text55 h5 {
+        font-size: 1rem; /* Smaller font size on tablets */
+    }
+
+    .service-text55 p {
+        font-size: 0.85rem; /* Smaller font size on tablets */
+    }
+}
+
+@media (max-width: 576px) { /* Mobile */
+    .service-icon img {
+        height: 50px; /* Set height for mobile */
+        width: 50px; /* Set width for mobile to match height */
+        border-radius: 50%; /* Circular icon */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+        border: 2px solid #000; /* Add border around the icon (you can change the color and thickness) */
+        box-sizing: border-box; /* Ensure the border is included in the element's width and height */
+    }
+
+    .service-text55 h5 {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .service-text55 p {
+        font-size: 0.75rem; /* Smaller font size on mobile */
+    }
+}
+
+
+
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn:hover {
+    /* background-color: #0056b3; Darken on hover */
+}
+
+.centered-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust this as needed */
+}
+
+/* Mobile View (Max Width 576px) */
+@media (max-width: 576px) { 
+    .service-item {
+        flex: 1 1 100%; /* Full width on mobile */
+        max-width: 100%; 
+        position: sticky; /* Sticky positioning */
+        top: 0; /* Adjust based on desired sticky position */
+        overflow-x: hidden; /* Hide horizontal overflow */
+    }
+
+    .service-text55 {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .service-icon img {
+        height: 50px; /* Set height for mobile */
+        width: 50px; /* Set width for mobile to match height */
+        border-radius: 50%; /* Circular icon */
+        object-fit: cover; /* Ensure image covers the area without distortion */
+        border: 2px solid #000; /* Border around the icon */
+        box-sizing: border-box; /* Include border in width/height */
+    }
+
+    .service-text55 h5 {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .service-text55 p {
+        font-size: 0.75rem; /* Smaller font size on mobile */
+    }
+    
+    .service-row {
+        overflow-x: hidden; /* Ensure no horizontal scrolling */
+    }
+}
+
+
+btn-square, .btn-sm-square, .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+/* CSS for Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
+.pagination-link {
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px; /* Add margin to ensure proper spacing when wrapping */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: black;
+    transition: background-color 0.3s;
+    font-size: 1rem; /* Default font size */
+}
+
+.pagination-link:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+.pagination-link.active {
+    background-color: #ffc107;
+    color: white;
+    pointer-events: none; /* Disable click on the active link */
+}
+
+/* Responsive Styles */
+
+/* Tablet View (Max Width 768px) */
+@media (max-width: 768px) {
+    .pagination-link {
+        overflow-x: hidden;
+        padding: 8px 12px; /* Smaller padding for tablet view */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+}
+
+/* Mobile View (Max Width 576px) */
+@media (max-width: 576px) {
+    .pagination-link {
+        padding: 6px 10px; /* Even smaller padding for mobile view */
+        font-size: 0.8rem; /* Smaller font size for mobile */
+        margin: 3px; /* Reduce margin to prevent crowding */
+    }
+}

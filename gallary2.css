@@ -1,0 +1,152 @@
+
+    /* Grid container styles */
+    .container11 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 cards in a row */
+        gap: 30px; /* Increased gap between cards */
+        max-width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .category {
+        text-align: center;
+        border-radius: 30px; /* Increased border radius */
+        padding: 20px; /* Padding for card size */
+        cursor: pointer;
+        transition: transform 0.2s;
+        background-color: #fff; /* Background color for visibility */
+        height: 225px; /* Card height */
+        width: 100%; /* Full width */
+        text-decoration: none; /* Remove underline from links */
+    }
+
+    .category img {
+        width: 80%; /* Increased image width */
+        height: 80%; /* Maintain aspect ratio */
+        max-height: 200px; /* Set max height for the image */
+        border-radius: 50%; /* Keep circular shape */
+        object-fit: cover;
+    }
+
+    .category p {
+        margin-top: 10px;
+        font-size: 22px;
+        color: black; /* Change text color to blue */
+        text-decoration: none; /* Ensure no underline on text */
+    }
+
+    /* Responsive styles */
+    @media (max-width: 1024px) {
+        .container11 {
+            grid-template-columns: repeat(5, 1fr); /* Still 5 cards in a row on smaller screens */
+        }
+    }
+
+    @media (max-width: 768px) {
+        .container11 {
+            grid-template-columns: repeat(3, 1fr); /* 3 cards in a row on even smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container11 {
+            grid-template-columns: 1fr; /* 1 card in a row on mobile devices */
+        }
+    }
+
+    /* Sort & Filter controls */
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .filter-dropdown,
+    .sort-dropdown {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .filter-btn,
+    .sort-btn {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .filter-btn:hover,
+    .sort-btn:hover {
+        background-color: #45a049;
+    }
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container11 {
+        grid-template-columns: repeat(4, 1fr); /* 4 cards in a row on larger tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .container11 {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards in a row on smaller tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .container11 {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards in a row on larger mobile devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .container11 {
+        grid-template-columns: 1fr; /* 1 card in a row on small mobile devices */
+    }
+
+    .category {
+        height: 200px; /* Slightly reduced height for mobile */
+        padding: 15px; /* Adjust padding for mobile screens */
+    }
+
+    .category img {
+        width: 70%; /* Reduce image size for smaller screens */
+    }
+
+    .category p {
+        font-size: 18px; /* Slightly smaller text for mobile readability */
+    }
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column; /* Stack controls vertically */
+        align-items: center;
+    }
+
+    .filter-dropdown,
+    .sort-dropdown,
+    .filter-btn,
+    .sort-btn {
+        width: 100%; /* Full width for controls */
+        margin: 5px 0; /* Margin between stacked elements */
+    }
+}
+
+@media (max-width: 576px) {
+    .filter-dropdown,
+    .sort-dropdown {
+        padding: 8px; /* Reduce padding for dropdowns on small screens */
+    }
+
+    .filter-btn,
+    .sort-btn {
+        padding: 8px 15px; /* Smaller padding for buttons on mobile */
+    }
+}
