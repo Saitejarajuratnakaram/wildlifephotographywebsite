@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wilderness</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="hindex.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-warning me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-warning me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.facebook.com/"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.twitter.com/"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.youtube.com/"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-0" href="https://www.instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/logo3.jpg" alt="Icon">
+
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="testimonial.html" class="nav-item nav-link">Testimonials</a>
+
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="booking.html" class="btn btn-warning">Booking<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark p-0 mb-5">
+        <div class="row g-0 flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
+                <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
+                    <h1 class="display-4 text-light mb-5"> Embark on a Thrilling Wildlife Photography Journey</h1>
+                    <div class="d-flex align-items-center pt-4 animated slideInDown">
+                        <a href="gallery.html" class="btn btn-warning py-sm-3 px-3 px-sm-5 me-5">View Galleries</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="./wildlife.mp4"
+                            data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+
+
+                        <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-11.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-22.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-33.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                            allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <!-- <p><span class="text-primary me-2">#</span>Our Animals</p> -->
+                    <h1 class="display-5 mb-0">Let`s See Our <span class="text-warning">Wilderness</span> Awsome Animals
+                    </h1>
+                </div>
+
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-11.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-md-11.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Wild Photography</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-11.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-lg-11.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Wild Photography</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-22.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-lg-22.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Wild Photography</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-22.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-md-22.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Wild Photography</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-md-33.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-md-33.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Wild Photography</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/animal-lg-33.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/animal-lg-33.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <p class="text-white small text-uppercase mb-0">Animal</p>
+                                        <h5 class="text-white mb-0">Wild Photography</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="get-involved">
+        <div class="container">
+            <h2 class="section-title">Join Our Wilderness Photography Adventure</h2>
+            <p class="section-description">Discover the untamed beauty of nature through the lens. Capture stunning
+                landscapes, elusive wildlife, and the wonders of the wilderness in their purest form.</p>
+
+            <br>
+            <br>
+            <div class="content-grid">
+                <!-- Left Side Content -->
+                <div class="left-content">
+                    <div class="left-item">
+                        <h4>Wildlife Photography</h4>
+                        <p>Explore and capture the beauty of animals in their natural habitat.</p>
+                        <hr>
+                    </div>
+                    <div class="left-item">
+                        <h4>Conservation Photography</h4>
+                        <p>Use your skills to highlight the importance of wildlife preservation.</p>
+                        <hr>
+                    </div>
+                    <div class="left-item">
+                        <h4>Wilderness Landscapes</h4>
+                        <p>Frame breathtaking views of untouched wilderness.</p>
+                        <hr>
+                    </div>
+                    <div class="left-item">
+                        <h4>Endangered Species Focus</h4>
+                        <p>Document species at risk and raise awareness through your photography.</p>
+                    </div>
+                </div>
+
+                <!-- Center Image -->
+                <div class="center-image">
+                    <img src="img/eeeeee.jpg" alt="Wildlife Photography" loading="lazy">
+                </div>
+
+                <!-- Right Side Content -->
+                <div class="right-content">
+                    <div class="right-item">
+                        <div class="icon"><i class="fas fa-camera"></i></div>
+                        <h4>Nature Through the Lens</h4>
+                        <p>Immerse yourself in capturing nature's finest moments.</p>
+                        <hr>
+                    </div><br>
+                    <div class="right-item">
+                        <div class="icon"><i class="fas fa-binoculars"></i></div>
+                        <h4>Explore and Capture</h4>
+                        <p>Embark on photography expeditions into the wild.</p>
+                        <hr>
+                    </div><br>
+                    <div class="right-item">
+                        <div class="icon"><i class="fas fa-mountain"></i></div>
+                        <h4>Aerial Wildlife Shots</h4>
+                        <p>Use drones to get unique perspectives on wildlife and nature.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section class="ho-nature-section">
+        <div class="ho-container">
+            <div class="ho-nature-item">
+                <div class="ho-image-container">
+                    <img src="img/nature11.jpg" alt="Nature">
+                </div>
+                <h2>Passion for the Wild</h2>
+            </div>
+            <div class="ho-nature-item">
+                <div class="ho-image-container">
+                    <img src="img/forest11.jpg" alt="Forest">
+                </div>
+                <h2>Wilderness Visions</h2>
+            </div>
+            <div class="ho-nature-item">
+                <div class="ho-image-container">
+                    <img src="img/wildlife11.jpg" alt="Wildlife">
+                </div>
+                <h2>Wildlife Whispers</h2>
+            </div>
+            <div class="ho-nature-item">
+                <div class="ho-image-container">
+                    <img src="img/animal11.jpg" alt="Animal">
+                </div>
+                <h2>Soulful Safari </h2>
+            </div>
+            <div class="ho-nature-item">
+                <div class="ho-image-container">
+                    <img src="img/ocean11.jpg" alt="Ocean">
+                </div>
+                <h2>The Wild Spirit Lens</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bo-container">
+        <div class="bo-content">
+            <h2 class="bo-section-title">Celebrating Urban Design</h2>
+
+            <!-- Project Gallery -->
+            <div class="bo-project-gallery">
+                <div class="bo-project-item" data-project="skyline">
+                    <p class="bo-subtitle">CityScape Initiative</p>
+                    <h3 class="bo-title">Modern Skyline Design</h3>
+                </div>
+                <div class="bo-vertical-hr"></div>
+                <div class="bo-project-item" data-project="bridge">
+                    <p class="bo-subtitle">CityScape Initiative</p>
+                    <h3 class="bo-title">Suspension Bridge Architecture</h3>
+                </div>
+                <div class="bo-vertical-hr"></div>
+                <div class="bo-project-item" data-project="plaza">
+                    <p class="bo-subtitle">CityScape Initiative</p>
+                    <h3 class="bo-title">Urban Plaza & Landscape</h3>
+                </div>
+                <div class="bo-vertical-hr"></div>
+                <div class="bo-project-item" data-project="skyscraper">
+                    <p class="bo-subtitle">CityScape Initiative</p>
+                    <h3 class="bo-title">Futuristic Skyscraper</h3>
+                </div>
+            </div>
+
+            <!-- Image Display Section -->
+            <div class="bo-project-display">
+                <div class="bo-project-image current" id="skyline" style="background-image: url('img/22.jpg');"></div>
+                <div class="bo-project-image" id="bridge" style="background-image: url('img/33.jpg');"></div>
+                <div class="bo-project-image" id="plaza" style="background-image: url('img/44.jpg');"></div>
+                <div class="bo-project-image" id="skyscraper" style="background-image: url('img/55.jpg');">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="po-container">
+        <h2 class="po-title">Wilderness & Wild Photography</h2>
+
+        <div class="po-main">
+            <!-- Left Side: Large Image with Main Blog Post -->
+            <div class="po-main-post">
+                <img src="img/animal-md-1.jpg" alt="Main Blog Image">
+                <div class="po-main-post-content">
+                    <h3>Capturing the Untamed: A Journey Into the Wilderness</h3>
+                    <p>October 18, 2024</p>
+                    <p>Explore the raw beauty of the wilderness through the lens of skilled photographers. From majestic
+                        predators to serene landscapes, witness nature in its purest form...</p>
+                    <a href="gallery.html">Read More</a>
+                </div>
+            </div>
+
+            <!-- Right Side: List of Articles -->
+            <div class="po-articles">
+                <div class="po-article-item">
+                    <h4>Secrets of the World's Most Remote Wildlife Sanctuaries</h4>
+                    <p>October 18, 2024</p>
+                    <p>Discover hidden gems of wildlife photography in far-off, uncharted sanctuaries...</p>
+                    <a href="birdsblog.html">Read More</a>
+                </div>
+
+                <div class="po-article-item">
+                    <h4>Meet the Top Photographers Changing the Game in Wild Photography</h4>
+                    <p>October 18, 2024</p>
+                    <p>A closer look at some of the world's most innovative and daring wildlife photographers...</p>
+                    <a href="batsblog.html">Read More</a>
+                </div>
+
+                <div class="po-article-item">
+                    <h4>An Epic Expedition Through the Amazon: Capturing the Unseen</h4>
+                    <p>October 18, 2024</p>
+                    <p>Journey deep into the heart of the Amazon rainforest and explore its elusive wildlife through
+                        breathtaking images...</p>
+                    <a href="arachindsmain.avif">Read More</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <div class="newsletter-container">
+            <h2>NEWSLETTER</h2>
+            <p>Keep up our latest news and events. Subscribe our newsletter</p>
+            <input type="email" placeholder="Email Address..." id="email">
+            <button onclick="subscribe()">SUBSCRIBE</button>
+        </div>
+    </center>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.twitter.com/"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="about.html">About</a>
+                    <a class="btn btn-link" href="gallery.html">Gallery</a>
+                    <a class="btn btn-link" href="blog.html">Blog</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="login.html">Login</a>
+                    <a class="btn btn-link" href="privacypolicy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="registration.html">Registration</a>
+                    <a class="btn btn-link" href="termsconditions.html">Terms & Conditions</a>
+                    <a class="btn btn-link" href="support.html">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <h1 class="m-0 text-warning" style="height: 55px; ">Wilderness</h1>
+                    </a>
+                    <!-- <h5 class="text-light mb-4">Wildlife Photography</h5> -->
+                    <p> Animal behavior to create stunning visuals that tell the story of the wild.</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/animal-lg-1.jpg" alt="Photo 1" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/animal-lg-2.jpg" alt="Photo 2" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/animal-lg-3.jpg" alt="Photo 3" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <!-- &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-warning btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+
+        // JavaScript to handle hover and change images
+        document.querySelectorAll('.bo-project-item').forEach(item => {
+            item.addEventListener('mouseover', function () {
+                // Get the project name from data-project attribute
+                let projectName = this.getAttribute('data-project');
+
+                // Hide all project images
+                document.querySelectorAll('.bo-project-image').forEach(image => {
+                    image.classList.remove('current');
+                });
+
+                // Show the current project image
+                document.getElementById(projectName).classList.add('current');
+            });
+        });
+
+    </script>
+    <script>
+        const emailInput = document.getElementById('email');
+
+        // Function to validate the email format
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        // Function to handle real-time validation
+        emailInput.addEventListener('input', function() {
+            if (validateEmail(emailInput.value)) {
+                emailInput.classList.remove('invalid');
+                emailInput.classList.add('valid');
+            } else {
+                emailInput.classList.remove('valid');
+                emailInput.classList.add('invalid');
+            }
+        });
+
+        // Function triggered when clicking the subscribe button
+        function subscribe() {
+            const email = emailInput.value;
+            if (validateEmail(email)) {
+                alert('Thank you for subscribing!');
+            } else {
+                alert('Please enter a valid email address.');
+                emailInput.focus();
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
