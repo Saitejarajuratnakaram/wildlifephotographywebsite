@@ -1,0 +1,820 @@
+/* General Styling */
+body {
+    
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* To support mobile layout */
+    overflow-x: hidden;
+  }
+  
+  /* Featured Posts Section */
+  .featured-posts {
+    width: 65%;
+    min-width: 300px;
+  }
+  
+  .featured-posts h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+  }
+  
+  .post-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+  }
+  
+  /* Large Post Styling */
+  .large-post {
+    flex: 1;
+    min-width: 300px;
+  }
+  .large-post-content a
+  {
+    color: black;
+  }
+  .large-post-content a:hover
+  {
+    color: #ffc107;
+  }
+  
+  .large-post img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Small Posts Styling */
+  .small-posts {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .small-post h4{
+    font-size: 18px;
+  }
+  .small-post {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .small-post img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .small-post-content a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .small-post-content a:hover {
+    color: #ffc107;
+  }
+  
+  /* trending1 Section */
+ /* trending1 Section */
+.trending1 {
+    width: 30%;
+    min-width: 300px;
+ 
+        }
+  
+  .trending1 h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+  }
+  
+  .trending1-item {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+    align-items: flex-start;
+  }
+  .content h3:hover{
+    color:#ffc107
+  }
+  .post-content h4:hover{
+   color: #ffc107;
+  }
+  
+  
+  .trending1-item span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    min-width: 30px; /* Ensures alignment */
+    text-align: right;
+  }
+  
+  .trending1-info {
+    flex: 1;
+  }
+  
+  .trending1-info a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .trending1-info a:hover {
+    color: #ffc107;
+  }
+  .trending-content h4:hover{
+    color:#ffc107;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  a:hover
+  {
+    color:#ffc107;
+  }
+  
+  /* Mobile-Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .featured-posts, .trending1 {
+      width: 100%;
+    }
+  
+    .post-container {
+      flex-direction: column;
+    }
+  
+    .large-post, .small-posts {
+      width: 100%;
+    }
+  }
+
+/*  */
+
+.highlights-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Highlights Grid */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.highlight-item {
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content p {
+  margin: 5px 0;
+  color: gray;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .highlights {
+      grid-template-columns: 1fr; /* Stacks items vertically on smaller screens */
+  }
+
+  .highlight-item {
+      flex-direction: column; /* Makes image and content stack vertically */
+      align-items: center;
+      text-align: center;
+  }
+
+  .highlight-item img {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 24px;
+  }
+
+  .content h3 {
+      font-size: 16px;
+  }
+
+  .content p {
+      font-size: 12px;
+  }
+}
+/*  */
+.container1 {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* Main Grid Layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  min-height: 500px;
+}
+
+/* Recent Posts and Categories Styling */
+.recent-posts,
+.categories {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Adjusted Headings */
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 2px solid black; /* Shorter border */
+  width: fit-content;
+}
+
+/* Recent Post Styling */
+.recent-post {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.recent-post img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-content h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post-content h5 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Trending Items */
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.trending-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trending-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.trending-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Adjust Padding and Borders for Categories */
+.categories h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+  width: fit-content; /* Ensures border is only under text */
+  padding-bottom: 5px;
+}
+
+.categories {
+  padding: 20px 10px; /* Adjusted padding for categories */
+}
+
+
+.post-content {
+  flex: 1;
+}
+
+.post-content h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-content h5 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: gray;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.post-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Categories Section */
+.trending {
+  flex: 1; /* Take up equal space */
+}
+
+.trending h2 {
+  height: 60px; /* Match with other h2 */
+  line-height: 60px; /* Vertical alignment */
+}
+
+.trending-item {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+.trending-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trending-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.trending-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.trending-content p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: gray;
+}
+
+/* Bottom Grid Section */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: -50px;
+  width: 80%;
+  margin-left: 100px;
+}
+
+.bottom-card {
+  display: flex;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  gap: 15px;
+}
+
+.bottom-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bottom-card-content h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.bottom-card-content h4:hover{
+  color: #ffc107;
+}
+
+.bottom-card-content p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: gray;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .recent-post {
+      flex-direction: row;
+      align-items: center;
+      text-align: left;
+  }
+
+  .recent-post img {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-post {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .recent-post img {
+      margin-bottom: 10px;
+  }
+
+  .trending-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .bottom-grid {
+      grid-template-columns: 1fr;
+      margin-left: 20px;
+  }
+}
+
+  
+
+
+/* Mobile and Tablet View Adjustments */
+@media (max-width: 1024px) {
+  .container1 {
+    padding: 20px; /* Reduced padding for medium screens */
+    gap: 20px; /* Reduce the gap for better spacing on smaller screens */
+  }
+  
+  .featured-posts {
+    width: 100%; /* Full width on medium screens */
+  }
+  
+  .large-post img {
+    height: 200px; /* Reduce image height for smaller screens */
+  }
+  
+  .small-post img {
+    width: 80px; /* Smaller image for compact view */
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column; /* Stack layout vertically on smaller screens */
+    padding: 15px; /* Further reduce padding */
+  }
+  
+  .featured-posts {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .large-post img {
+    height: 180px; /* Reduce image height for small screens */
+  }
+  
+  .small-post img {
+    width: 70px; /* Smaller image for mobile screens */
+    height: 70px;
+  }
+
+  .small-post h4 {
+    font-size: 16px; /* Slightly smaller font size for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .post-container {
+    flex-direction: column; /* Stack posts vertically on very small screens */
+    gap: 10px; /* Reduce gap to minimize empty spaces */
+  }
+  
+  .large-post img {
+    height: 150px; /* Further reduce image height */
+  }
+
+  .small-post {
+    gap: 5px; /* Reduce gap between small posts for compact view */
+  }
+
+  .small-post img {
+    width: 60px; /* Smaller image for compact view */
+    height: 60px;
+  }
+
+  .small-post-content a {
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+}
+
+/* Responsive adjustments for medium screens (tablets) */
+@media (max-width: 1024px) {
+  .trending1 {
+    width: 45%; /* Increase width on medium screens */
+    min-width: 250px; /* Adjust minimum width */
+  }
+
+  .trending1-item {
+    gap: 10px; /* Increase gap between items for better spacing */
+  }
+}
+
+/* Responsive adjustments for small screens (mobiles) */
+@media (max-width: 768px) {
+  .trending1 {
+    width: 100%; /* Full width on small screens */
+    min-width: unset; /* Remove minimum width constraint */
+  }
+
+  .trending1-item {
+    flex-direction: column; /* Stack items vertically on small screens */
+    gap: 8px; /* Smaller gap between items */
+    margin-bottom: 15px; /* More margin for clearer separation */
+  }
+
+  .trending1-info a {
+    font-size: 1rem; /* Slightly reduce font size on small screens */
+  }
+
+  .trending1-item span {
+    font-size: 1rem; /* Slightly reduce font size for span */
+    text-align: left; /* Adjust alignment for mobile view */
+  }
+}
+
+/* Responsive adjustments for very small screens (mobile devices) */
+@media (max-width: 576px) {
+  .trending1 {
+    width: 100%; /* Ensure full width */
+    padding: 0 10px; /* Add some padding for smaller screens */
+  }
+
+  .trending1 h2 {
+    font-size: 1.5rem; /* Reduce heading size for mobile screens */
+  }
+
+  .trending1-item {
+    margin-bottom: 20px; /* Increase spacing between items */
+  }
+
+  .trending1-info a {
+    font-size: 0.9rem; /* Reduce link font size for compact view */
+  }
+}
+
+
+/* Base container and heading adjustments */
+.highlights-container {
+  max-width: 100%; /* Allow the container to scale up to full width */
+  padding: 0 20px;
+  margin: 20px auto; /* Reduced margin for smaller screens */
+}
+
+h2 {
+  font-size: 24px; /* Slightly reduced font size for better scaling */
+  margin-bottom: 15px; /* Increased margin for clear spacing */
+}
+
+/* Responsive Highlights Grid */
+@media (max-width: 1024px) {
+  .highlights {
+    grid-template-columns: 1fr; /* Single column layout on medium screens */
+  }
+  
+  .highlight-item {
+    flex-direction: column; /* Stack image and text on top of each other */
+    align-items: center; /* Center-align elements */
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .highlight-item img {
+    width: 80px; /* Adjust image size for medium screens */
+    height: 80px;
+    margin: 0 0 10px 0; /* Adjust margins to fit the stacked layout */
+  }
+
+  .content h3 {
+    font-size: 16px; /* Reduce font size for titles */
+  }
+
+  .content p {
+    font-size: 12px; /* Reduce font size for paragraphs */
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights-container {
+    padding: 0 15px; /* Adjust padding for smaller screens */
+  }
+  
+  .highlight-item {
+    padding: 10px; /* Reduced padding for smaller screens */
+    border-radius: 6px; /* Slightly smaller border-radius */
+  }
+
+  .highlight-item img {
+    width: 70px; /* Smaller image size for compact view */
+    height: 70px;
+  }
+
+  .content h3 {
+    font-size: 15px; /* Adjust font size for titles */
+  }
+
+  .content p {
+    font-size: 12px; /* Keep font size compact */
+  }
+}
+
+@media (max-width: 576px) {
+  .highlights-container {
+    margin: 10px auto; /* Minimal margin for mobile view */
+    padding: 0 10px; /* Compact padding for smaller screens */
+  }
+
+  .highlight-item {
+    padding: 8px; /* Further reduced padding for mobile */
+  }
+
+  .highlight-item img {
+    width: 60px; /* Small image size for tight spaces */
+    height: 60px;
+  }
+
+  .content h3 {
+    font-size: 14px; /* Compact font size for mobile */
+  }
+
+  .content p {
+    font-size: 11px; /* Compact font size for descriptions */
+  }
+}
+
+
+
+/* Mobile and Tablet View Adjustments */
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 1fr; /* Stack columns on medium screens */
+    gap: 20px;
+  }
+
+  .bottom-grid {
+    width: 100%; /* Full width on medium screens */
+    margin-left: 0; /* Center the bottom grid */
+    grid-template-columns: 1fr; /* Stack bottom grid items vertically */
+  }
+
+  .bottom-card {
+    flex-direction: column; /* Stack content vertically in bottom card */
+    align-items: flex-start;
+    gap: 10px; /* Smaller gap for better spacing */
+  }
+
+  .bottom-card img {
+    width: 100%; /* Full width for image on medium screens */
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    padding: 0 10px; /* Reduced padding for smaller screens */
+  }
+
+  .recent-post img,
+  .trending-item img,
+  .bottom-card img {
+    width: 100px; /* Adjust image size for compact view */
+    height: auto;
+  }
+
+  .recent-post,
+  .trending-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align for better readability */
+  }
+
+  .recent-post img,
+  .trending-item img {
+    margin: 0 0 10px 0; /* Adjust margin for stacked layout */
+  }
+
+  .recent-post-content,
+  .trending-content {
+    text-align: center; /* Center-align content for better readability */
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 22px; /* Smaller font size for headings */
+  }
+
+  .main-grid,
+  .bottom-grid {
+    grid-template-columns: 1fr; /* Full-width single column layout */
+  }
+
+  .recent-post img,
+  .trending-item img,
+  .bottom-card img {
+    width: 80px; /* Smaller image size for mobile view */
+    height: auto;
+  }
+
+  .bottom-card {
+    padding: 10px; /* Reduced padding for compact layout */
+    gap: 10px; /* Smaller gap for elements */
+  }
+
+  .bottom-card-content h4,
+  .bottom-card-content p,
+  .trending-content h4,
+  .trending-content p {
+    font-size: 14px; /* Smaller font size for compact view */
+  }
+}

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wilderness</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+       
+
+        .container123 {
+            max-width: 100%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            padding: 10px;
+        }
+
+        /* Ensure form stays responsive and centered */
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .form-group {
+            flex-basis: 100%;
+        }
+
+        .row1 {
+            display: flex;
+            gap: 15px;
+        }
+
+        .h1 {
+            text-align: center;
+
+        }
+
+        .row input {
+            flex: 1;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f0f4ff;
+        }
+
+        /* Ensure inputs and textareas are responsive */
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f0f4ff;
+        }
+
+        form input[type="time"],
+        form input[type="date"] {
+            max-width: 100%;
+        }
+
+        form textarea {
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #00a2e8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2EB872;
+        }
+
+        .error {
+            color: red;
+        }
+
+        /* Styling for available and unavailable dates */
+        .available-date {
+            background-color: #d4edda !important;
+            border-color: #c3e6cb !important;
+        }
+
+        .unavailable-date {
+            background-color: #f8d7da !important;
+            border-color: #f5c6cb !important;
+        }
+
+        /* Media Queries for Responsiveness */
+
+        /* For mobile screens (width less than 600px) */
+        @media only screen and (max-width: 600px) {
+
+            /* Make the rows stack vertically */
+            .row {
+                flex-direction: column;
+            }
+
+            /* Set form width to 100% of container */
+            form {
+                width: 100%;
+                padding: 10px;
+            }
+
+            /* Input elements also scale */
+            form input,
+            form textarea {
+                width: 100%;
+            }
+
+            /* Adjust container for small screens */
+            .container123 {
+                width: 90%;
+            }
+        }
+
+        /* For tablets (between 600px and 900px) */
+        @media only screen and (min-width: 600px) and (max-width: 900px) {
+
+            /* Adjust the form width for tablets */
+            form {
+                width: 90%;
+            }
+
+            /* Container width */
+            .container123 {
+                width: 85%;
+            }
+
+            /* Adjust the row behavior for tablets */
+            .row1 {
+                flex-direction: row;
+            }
+
+            form input,
+            form textarea {
+                width: 100%;
+            }
+        }
+
+        /* For larger screens like laptops/desktops (over 900px) */
+        @media only screen and (min-width: 900px) {
+
+            /* Set the form width to a more fixed size */
+            form {
+                width: 85%;
+            }
+
+            .container123 {
+                width: 750px;
+                /* Container will stay at max-width defined for large screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-warning me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-warning me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.facebook.com/"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.twitter.com/"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.youtube.com/"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-0" href="https://www.instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/logo3.jpg" alt="Icon">
+
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="testimonial.html" class="nav-item nav-link">Testimonials</a>
+
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="booking.html" class="btn btn-warning active">Booking<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-4 text-white mb-3 animated slideInDown">Booking</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                    <li class="breadcrumb-item text-warning active" aria-current="page">booking</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+
+    <div class="container123">
+        <form id="bookingForm">
+            <h1>Photography Form</h1>
+
+            <!-- Name Fields -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <div class="row1">
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="form-group">
+                <label for="contact">Contact Info</label>
+                <div class="row1">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="phone" placeholder="Mobile Number" required>
+                </div>
+            </div>
+
+            <!-- Event Date -->
+            <div class="form-group">
+                <label for="eventDate">Select Event Date</label>
+                <input type="date" id="eventDate" required style="width: 100%;">
+                <span id="dateError" class="error"></span>
+            </div>
+
+            <!-- Session Time -->
+            <div class="form-group">
+                <label for="sessionTime">Session Time</label>
+                <input type="time" id="sessionTime" required style="width: 100%;">
+            </div>
+
+            <!-- Location -->
+            <div class="form-group">
+                <label for="location">Location</label>
+                <div class="row1">
+                    <input type="text" id="street" placeholder="Street" required>
+                    <input type="text" id="region" placeholder="Region" required>
+                </div>
+            </div>
+
+            <!-- City & Postal Code -->
+            <div class="form-group">
+                <div class="row1">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="postal" placeholder="Postal Code" required>
+                </div>
+            </div>
+
+            <!-- Special Request -->
+            <div class="form-group">
+                <label for="specialRequest">Special Request</label>
+                <textarea id="specialRequest" placeholder="Any special requests" rows="4" required></textarea>
+                <span id="specialRequestError" class="error"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+    </div>
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.twitter.com/"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="about.html">About</a>
+                    <a class="btn btn-link" href="gallery.html">Gallery</a>
+                    <a class="btn btn-link" href="blog.html">Blog</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="login.html">Login</a>
+                    <a class="btn btn-link" href="privacypolicy.html">Privacy Policy</a>
+                    <a class="btn btn-link" href="registration.html">Registration</a>
+                    <a class="btn btn-link" href="termsconditions.html">Terms & Conditions</a>
+                    <a class="btn btn-link" href="support.html">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <h1 class="m-0 text-warning" style="height: 55px; ">Wilderness </h1>
+                    </a>
+
+                    <p> Animal behavior to create stunning visuals that tell the story of the wild.</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/animal-lg-1.jpg" alt="Photo 1" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/animal-lg-2.jpg" alt="Photo 2" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="img/animal-lg-3.jpg" alt="Photo 3" class="img-fluid"
+                                style="width: 100%; height: auto; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-warning btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        const unavailableDates = [
+            '2024-10-20', '2024-10-21', '2024-10-24', '2024-10-25', '2024-10-28',
+            '2024-11-02', '2024-11-07', '2024-11-14', '2024-11-20', '2024-11-28'
+        ];
+
+        const availableDates = [
+            '2024-10-19', '2024-10-22', '2024-10-23', '2024-10-26', '2024-10-27',
+            '2024-10-29', '2024-10-30', '2024-11-01', '2024-11-03', '2024-11-04',
+            '2024-11-05', '2024-11-06', '2024-11-08', '2024-11-09', '2024-11-10',
+            '2024-11-11', '2024-11-12', '2024-11-13', '2024-11-15', '2024-11-16'
+        ];
+
+        document.getElementById("eventDate").addEventListener("input", function (e) {
+            const selectedDate = e.target.value;
+            const dateError = document.getElementById("dateError");
+
+            e.target.classList.remove('available-date', 'unavailable-date');
+
+            if (unavailableDates.includes(selectedDate)) {
+                dateError.textContent = "This date is not available. Please choose another date.";
+                e.target.classList.add('unavailable-date');
+            } else if (availableDates.includes(selectedDate)) {
+                dateError.textContent = "";
+                e.target.classList.add('available-date');
+            } else {
+                dateError.textContent = "Please choose a valid available date.";
+                e.target.classList.remove('available-date', 'unavailable-date');
+            }
+        });
+
+        // Prevent numbers in First Name and Last Name fields
+        document.getElementById("firstName").addEventListener("input", function (e) {
+            e.target.value = e.target.value.replace(/[^a-zA-Z\s\-]/g, '');
+        });
+
+        document.getElementById("lastName").addEventListener("input", function (e) {
+            e.target.value = e.target.value.replace(/[^a-zA-Z\s\-]/g, '');
+        });
+
+        // Prevent letters in Phone Number field
+        document.getElementById("phone").addEventListener("input", function (e) {
+            e.target.value = e.target.value.replace(/[^\d]/g, '');
+        });
+
+        // Ensure email starts with a letter
+        document.getElementById("email").addEventListener("input", function (e) {
+            const emailValue = e.target.value;
+            if (!/^[a-zA-Z]/.test(emailValue)) {
+                e.target.value = emailValue.replace(/^[^a-zA-Z]+/, '');
+            }
+        });
+
+        document.getElementById("bookingForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const eventDate = document.getElementById("eventDate").value;
+            const specialRequest = document.getElementById("specialRequest").value;
+
+            if (!/^[a-zA-Z\s\-]+$/.test(firstName) || !/^[a-zA-Z\s\-]+$/.test(lastName)) {
+                alert("Name fields can only contain letters, spaces, and hyphens.");
+                return;
+            }
+
+            if (!/^\d[\d\s\-]*$/.test(phone)) {
+                alert("Phone number can only contain digits.");
+                return;
+            }
+
+            if (specialRequest === "") {
+                document.getElementById("specialRequestError").textContent = "Special request cannot be empty.";
+                return;
+            }
+
+            alert("Form submitted successfully!");
+
+            window.location.href = 'success.html';
+        });
+    </script>
+</body>
+
+</html>

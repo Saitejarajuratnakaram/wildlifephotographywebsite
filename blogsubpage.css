@@ -1,0 +1,300 @@
+
+
+
+.container {
+width: 90%;
+margin: 20px auto;
+padding: 10px;
+}
+
+/* Header */
+.header h1 {
+font-size: 2em;
+margin-bottom: 15px;
+text-align: center;
+}
+
+/* Author Section */
+.author {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.author-img {
+border-radius: 50%;
+margin-right: 15px;
+width: 50px;
+height: 50px;
+}
+
+.author-info h3, .author-info p {
+text-align: center;
+}
+
+/* Image Section */
+.image-section {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.main-image {
+width: 100%;
+max-width: 800px;
+height: auto;
+border-radius: 10px;
+}
+
+/* Blog Content */
+.content {
+margin-top: 20px;
+}
+
+.dropcap {
+float: left;
+font-size: 3em;
+margin-right: 10px;
+line-height: 0.8;
+font-family: serif;
+font-weight: bold;
+}
+
+/* Text Block */
+.text-block p {
+font-size: 1.1em;
+margin-bottom: 20px;
+color: #333;
+line-height: 1.8;
+}
+
+.image-block {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.img-left, .img-right {
+width: 49%;
+border-radius: 10px;
+}
+
+.content h2 {
+font-size: 2em;
+margin-bottom: 10px;
+}
+
+.content p {
+margin-bottom: 15px;
+color: #555;
+}
+
+.content ol {
+margin-left: 20px;
+}
+
+.content ol li {
+margin-bottom: 10px;
+font-size: 1.1em;
+}
+
+/* Comments Section */
+.comments-section {
+width: 90%;
+margin: 0 auto;
+}
+
+h2 {
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+.comment, .sub-comment {
+
+border-radius: 8px;
+padding: 15px;
+margin-bottom: 15px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-header {
+margin-bottom: 10px;
+}
+
+.comment-details h3 {
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.comment-details span {
+font-size: 14px;
+
+}
+
+.comment-body p {
+font-size: 16px;
+color: #555;
+}
+
+.sub-comment {
+margin-left: 30px;
+margin-top: 10px;
+}
+
+.rating {
+margin: 10px 0;
+color: gold;
+}
+
+.star {
+cursor: pointer;
+font-size: 20px;
+color: grey; /* Gray color for unselected stars */
+}
+
+.star.selected {
+color: #FFD700; /* Gold color for selected stars */
+}
+
+form {
+margin-top: 20px;
+padding: 15px;
+
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+form button {
+padding: 10px 15px;
+background-color: #ffc107;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+form button:hover {
+background-color: #ffcc00;
+}
+
+.error {
+color: red;
+margin-top: 5px;
+}
+
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+.container, .comments-section {
+ width: 100%;
+}
+
+.author {
+ flex-direction: column;
+ margin: 20px 0;
+}
+
+.image-block {
+ flex-direction: column;
+}
+
+.img-left, .img-right {
+ width: 100%;
+ margin-bottom: 10px;
+}
+
+.content h2 {
+ font-size: 1.5em;
+}
+
+.comment-details h3 {
+ font-size: 16px;
+}
+
+.comment-details span {
+ font-size: 12px;
+}
+}
+
+ 
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .author, .image-block {
+      flex-direction: column; /* Stack author section and images vertically */
+      align-items: center;
+    }
+  
+    .img-left, .img-right {
+      width: 100%; /* Full width for images on smaller screens */
+      margin-bottom: 10px; /* Add margin for spacing between images */
+    }
+  
+    .content h2 {
+      font-size: 1.8em; /* Adjust heading size */
+    }
+  
+    .text-block p, .content p {
+      font-size: 1em; /* Slightly smaller text for readability */
+    }
+  
+    .comments-section, .container {
+      width: 95%; /* Full width for containers */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .author-info h3, .author-info p {
+      text-align: left; /* Align text to the left for readability */
+    }
+  
+    .main-image {
+      max-width: 100%; /* Full width for main image */
+    }
+  
+    .comment, .sub-comment, form {
+      padding: 10px; /* Reduced padding for compact view */
+    }
+  
+    form input, form textarea {
+      padding: 8px; /* Smaller padding for input fields */
+    }
+  
+    form button {
+      padding: 8px 12px; /* Smaller button size */
+    }
+  
+    .content h2, h2 {
+      font-size: 1.6em; /* Adjust heading size */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container, .comments-section {
+      width: 100%; /* Full width on mobile */
+      padding: 0 10px; /* Adjust padding for mobile view */
+    }
+  
+    h2, .content h2 {
+      font-size: 1.4em; /* Smaller font size for headings */
+    }
+  
+    .text-block p, .content p, .comment-body p {
+      font-size: 0.95em; /* Adjust font size for better readability */
+    }
+  
+    .img-left, .img-right {
+      width: 100%; /* Full width images for mobile */
+    }
+  
+    .comment, .sub-comment, form {
+      padding: 8px; /* Reduced padding */
+    }
+  }
+  
