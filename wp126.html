@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wp.css">
+    <link href="https://unpkg.com/feather-icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMhZxUtIh54+0gZZmTozhohJgF6TtF7g9v5z7Q" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <title>Wilderness</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-warning" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-warning me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-warning me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.facebook.com/"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.twitter.com/"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-1" href="https://www.youtube.com/"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-sm-square bg-white text-warning me-0" href="https://www.instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/logo3.jpg" alt="Icon">
+
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="testimonial.html" class="nav-item nav-link">Testimonials</a>
+
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="booking.html" class="btn btn-warning">Booking<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Page Header Start -->
+    <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-4 text-white mb-3 animated slideInDown"> Arachnids Photo Detail </h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="gallery.html">Gallery </a></li>
+                    <li class="breadcrumb-item text-warning active" aria-current="page"> Arachnids Photo Detail </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div class="container1">
+        <!-- Image Section -->
+        <div class="image-section">
+            <div class="img-container">
+                <img src="i6.jpg" alt="Jumping Spider" class="zoomable-image" id="zoomable-image">
+            </div>
+        </div>
+        <!-- Text Section -->
+        <class="text-section">
+            <h1 style="text-align: center;">Jumping Spiders: Nature's Agile Predators</h1>
+            <p class="intro">
+                Jumping spiders are known for their incredible agility and distinctive jumping ability. These small arachnids are captivating and skilled hunters, using their remarkable vision to stalk and capture prey.
+            </p>
+            <p class="description" style="margin-left: 20px;">
+                With over 6,000 species worldwide, jumping spiders are easily recognized by their stout bodies and large front-facing eyes. Unlike many other spiders, they do not spin webs to catch prey; instead, they use a method called "sit-and-wait" predation. These spiders can leap up to 50 times their body length, making them one of the most agile hunters in the animal kingdom. Their vibrant colors and intricate patterns make them a favorite among photographers and nature enthusiasts.
+            </p>
+        
+            <!-- Progress Section -->
+            <div class="progress-section" style="margin-left: 20px;">
+                <div class="progress-item">
+                    <span class="label">Identification Skills</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-percentage="85"></div>
+                    </div>
+                    <span class="percentage">0%</span>
+                </div>
+            
+                <div class="progress-item">
+                    <span class="label">Hunting Techniques</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-percentage="90"></div>
+                    </div>
+                    <span class="percentage">0%</span>
+                </div>
+            
+                <div class="progress-item">
+                    <span class="label">Behavioral Traits</span>
+                    <div class="progress-bar">
+                        <div class="progress" data-percentage="75"></div>
+                    </div>
+                    <span class="percentage">0%</span>
+                </div>
+            </div>
+            
+            <div class="container1 second-section">
+                <!-- Left side: Image and quote -->
+                <div class="left-section">
+                    <img src="i6.jpg" alt="Close-up of Jumping Spider">
+                </div>
+            
+                <!-- Right side: Text and features -->
+                <div class="right-section">
+                    <h1>Jumping Spiders: Masters of Movement</h1>
+                    <p class="intro">
+                        Jumping spiders are fascinating creatures, exhibiting extraordinary visual acuity and hunting prowess.
+                    </p>
+                    <p class="intro">
+                        Their ability to jump great distances and their colorful appearance make them a delight to observe.
+                    </p>
+                    
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i> <!-- Eye Icon -->
+                            <div class="feature-text">
+                                <h3>Exceptional Vision</h3>
+                                <p>Jumping spiders have excellent eyesight, allowing them to detect movement from great distances.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="feature-item">
+                            <i class="fas fa-arrows-alt"></i> <!-- Movement Icon -->
+                            <div class="feature-text">
+                                <h3>Incredible Jumping Ability</h3>
+                                <p>They can leap distances up to 50 times their body length to capture prey or avoid predators.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-column" style="margin-top: 160px;">
+                    <ul class="checklist">
+                        <li>Recognize Different Jumping Spider Species</li>
+                        <li>Understand Their Habitat Preferences</li>
+                        <li>Learn About Their Diet and Hunting Techniques</li>
+                        <li>Promote Awareness of Their Ecological Role</li>
+                        <li>Explore Their Unique Behaviors and Adaptations</li>
+                    </ul>
+                   <a href="booking.html"><button class="read-more">Book Now</button></a> 
+                </div>
+                
+            </div>
+        
+            <div class="container1 third-section">
+                <!-- Left side: Image -->
+                <div class="left-section">
+                    <img src="p4.jpg" alt="Photographer and Jumping Spider">
+                </div>
+            
+                <!-- Right side: Story Behind the Photograph -->
+                <div class="right-section">
+                    <h1>Story Behind the Jumping Spider Photograph</h1>
+                    
+                    <p>
+                        Capturing the essence of jumping spiders requires skill and patience. Their quick movements and vibrant colors make them challenging yet rewarding subjects for photography.
+                    </p>
+                    <br>
+                    <ul class="intro">
+                        <li>Photographing at the right moment can reveal the spider's jumping ability.</li>
+                        <li>Understanding their behavior is key to anticipating their movements for the perfect shot.</li>
+                        <li>Every photograph tells a story of the jumping spider's role in its ecosystem.</li>
+                        <li>Sharing these images helps raise awareness about the importance of spiders in nature.</li>
+                        <li>Encouraging appreciation for jumping spiders fosters a better understanding of their ecological significance.</li>
+                    </ul>
+                </div>
+            </div>
+        
+        
+        
+            <section class="best-work-section">
+                <div class="work-header">
+                    <h1 style="text-align: center;">Our Best Work</h1>
+                </div>
+
+                <div class="work-gallery">
+                    <div class="work-item">
+                        <img src="i1.jpg" alt="Iberian Lynx Tapada">
+                        <div class="work-info">
+                            <h3>Common Spiders
+                            </h3>
+                            <p>There are thousands of species of spiders around the world, and many of them are commonly found in and around home gardenss.</p>
+                            <a href="wp121.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <img src="i2.jpg" alt="Reptilian Blizzards">
+                        <div class="work-info">
+                            <h3>Tarantulas</h3>
+                            <p>Tarantulas are one of the most well-known and largest types of spiders, belonging to the family Theraphosidae. Despite their fearsome reputation.</p>
+                            <a href="wp122.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <img src="i3.jpg" alt="Primate Temple">
+                        <div class="work-info">
+                            <h3>Scorpions</h3>
+                            <p>Scorpions are fascinating and ancient arachnids, with a history that dates back over 400 million years.Known for their characteristic pincers.</p>
+                            <a href="wp123.html" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Footer Start -->
+            <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+                <div class="container py-5">
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="text-light mb-4" style="color: white;">Address</h5>
+                            <p class="mb-2"><i class="fa fa-map-marker-alt me-3" style="color: white;"></i>123 Street,
+                                New York, USA</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3" style="color: white;"></i>+012 345 67890</p>
+                            <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                            <div class="d-flex pt-2">
+                                <a class="btn btn-outline-light btn-social" href="https://www.twitter.com/"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i
+                                        class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="text-light mb-4">Quick Links</h5>
+                            <a class="btn btn-link" href="index.html">Home</a>
+                            <a class="btn btn-link" href="about.html">About</a>
+                            <a class="btn btn-link" href="gallery.html">Gallery</a>
+                            <a class="btn btn-link" href="blog.html">Blog</a>
+                            <a class="btn btn-link" href="contact.html">Contact</a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="text-light mb-4">Quick Links</h5>
+                            <a class="btn btn-link" href="login.html">Login</a>
+                            <a class="btn btn-link" href="privacypolicy.html">Privacy Policy</a>
+                            <a class="btn btn-link" href="registration.html">Registration</a>
+                            <a class="btn btn-link" href="termsconditions.html">Terms & Conditions</a>
+                            <a class="btn btn-link" href="support.html">Support</a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="index.html">
+                                <h1 class="m-0 text-warning" style="height: 55px; ">Wilderness </h1>
+                            </a>
+
+                            <p style="color: aliceblue;"> Animal behavior to create stunning visuals that tell the story
+                                of the wild.</p>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <img src="img/animal-lg-1.jpg" alt="Photo 1" class="img-fluid"
+                                        style="width: 100%; height: auto; object-fit: cover;">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <img src="img/animal-lg-2.jpg" alt="Photo 2" class="img-fluid"
+                                        style="width: 100%; height: auto; object-fit: cover;">
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <img src="img/animal-lg-3.jpg" alt="Photo 3" class="img-fluid"
+                                        style="width: 100%; height: auto; object-fit: cover;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-warning btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/counterup/counterup.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const progressItems = document.querySelectorAll('.progress-item');
+
+                    progressItems.forEach(item => {
+                        const percentage = item.querySelector('.progress').getAttribute('data-percentage');
+                        const percentageLabel = item.querySelector('.percentage');
+                        const progressBar = item.querySelector('.progress');
+
+                        let currentPercentage = 0;
+
+                        // Function to animate the percentage
+                        const animateProgress = setInterval(() => {
+                            if (currentPercentage < percentage) {
+                                currentPercentage++;
+                                percentageLabel.textContent = currentPercentage + '%';
+                                progressBar.style.width = currentPercentage + '%';
+                            } else {
+                                clearInterval(animateProgress); // Stop when reaching the target percentage
+                            }
+                        }, 20); // Adjust the speed of increment (20 ms)
+                    });
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const imgContainer = document.querySelector('.img-container');
+                    const zoomLens = document.querySelector('.zoom-lens');
+                    const img = document.querySelector('.zoomable-image');
+
+                    imgContainer.addEventListener('mousemove', function (e) {
+                        // Get the bounding rectangle of the image
+                        const rect = img.getBoundingClientRect();
+                        const x = e.clientX - rect.left; // X position relative to the image
+                        const y = e.clientY - rect.top; // Y position relative to the image
+
+                        // Set the position of the zoom lens
+                        zoomLens.style.left = `${x - zoomLens.offsetWidth / 2}px`;
+                        zoomLens.style.top = `${y - zoomLens.offsetHeight / 2}px`;
+
+                        // Update the background position of the zoom lens to zoom in on the cursor location
+                        zoomLens.style.backgroundPosition = `-${x * 2 - zoomLens.offsetWidth / 2}px -${y * 2 - zoomLens.offsetHeight / 2}px`;
+
+                        // Show the zoom lens
+                        zoomLens.style.visibility = 'visible';
+                    });
+
+                    imgContainer.addEventListener('mouseleave', function () {
+                        zoomLens.style.visibility = 'hidden'; // Hide zoom lens when mouse leaves
+                    });
+                });
+
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const progressItems = document.querySelectorAll('.progress-item');
+
+                    progressItems.forEach(item => {
+                        const progressElement = item.querySelector('.progress');
+                        const percentageElement = item.querySelector('.percentage');
+                        const targetPercentage = parseInt(progressElement.getAttribute('data-percentage'));
+
+                        let currentPercentage = 0;
+
+                        const interval = setInterval(() => {
+                            if (currentPercentage < targetPercentage) {
+                                currentPercentage++;
+                                percentageElement.textContent = `${currentPercentage}%`;
+                                progressElement.style.width = `${currentPercentage}%`;
+                            } else {
+                                clearInterval(interval); // Stop when target is reached
+                            }
+                        }, 20); // Adjust this value for speed; lower = faster
+                    });
+                });
+
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const progressItems = document.querySelectorAll('.progress-item');
+
+                    progressItems.forEach(item => {
+                        const progressElement = item.querySelector('.progress');
+                        const percentageElement = item.querySelector('.percentage');
+                        const targetPercentage = parseInt(progressElement.getAttribute('data-percentage'));
+
+                        let currentPercentage = 0;
+
+                        // Increase the interval time for a slower increment
+                        const interval = setInterval(() => {
+                            if (currentPercentage < targetPercentage) {
+                                currentPercentage++;
+                                percentageElement.textContent = `${currentPercentage}%`;
+                                progressElement.style.width = `${currentPercentage}%`;
+                            } else {
+                                clearInterval(interval); // Stop when target is reached
+                            }
+                        }, 50); // Adjust this value for speed; higher = slower
+                    });
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const imgContainer = document.querySelector('.img-container');
+                    const zoomLens = document.querySelector('.zoom-lens');
+                    const img = document.querySelector('.zoomable-image');
+
+                    img.addEventListener('load', function () {
+                        const imgWidth = img.offsetWidth;
+                        const imgHeight = img.offsetHeight;
+
+                        // Set the zoom lens background size to double the image dimensions for better clarity
+                        zoomLens.style.backgroundImage = `url(${img.src})`;
+                        zoomLens.style.backgroundSize = `${imgWidth * 2}px ${imgHeight * 2}px`; // Set zoom level
+
+                        // Handle mouse movement
+                        imgContainer.addEventListener('mousemove', function (e) {
+                            const rect = img.getBoundingClientRect();
+                            const x = e.clientX - rect.left; // X position relative to the image
+                            const y = e.clientY - rect.top; // Y position relative to the image
+
+                            // Ensure the zoom lens stays within image bounds
+                            const lensX = Math.max(0, Math.min(x - zoomLens.offsetWidth / 2, rect.width - zoomLens.offsetWidth));
+                            const lensY = Math.max(0, Math.min(y - zoomLens.offsetHeight / 2, rect.height - zoomLens.offsetHeight));
+
+                            // Set the position of the zoom lens
+                            zoomLens.style.left = `${lensX}px`;
+                            zoomLens.style.top = `${lensY}px`;
+
+                            // Update the background position of the zoom lens
+                            zoomLens.style.backgroundPosition = `-${(x * 2) - zoomLens.offsetWidth / 2}px -${(y * 2) - zoomLens.offsetHeight / 2}px`;
+
+                            // Show the zoom lens
+                            zoomLens.style.display = 'block';
+                        });
+
+                        imgContainer.addEventListener('mouseleave', function () {
+                            zoomLens.style.display = 'none'; // Hide zoom lens when mouse leaves
+                        });
+                    });
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const img = document.querySelector('.zoomable-image');
+                    const lens = document.querySelector('.zoom-lens');
+
+                    // Show the lens and set background
+                    img.addEventListener('mouseover', function () {
+                        lens.style.display = 'block';
+                    });
+
+                    // Hide the lens when not hovering
+                    img.addEventListener('mouseout', function () {
+                        lens.style.display = 'none';
+                    });
+
+                    // Move the lens and zoom the image
+                    img.addEventListener('mousemove', function (e) {
+                        const rect = img.getBoundingClientRect(); // Get image position
+                        const x = e.clientX - rect.left; // Get X position within the image
+                        const y = e.clientY - rect.top; // Get Y position within the image
+
+                        // Set lens position
+                        lens.style.left = x - (lens.offsetWidth / 2) + 'px';
+                        lens.style.top = y - (lens.offsetHeight / 2) + 'px';
+
+                        // Calculate background position and size for the zoom effect
+                        const bgX = (x / img.offsetWidth) * 100; // Background position
+                        const bgY = (y / img.offsetHeight) * 100; // Background position
+
+                        lens.style.backgroundImage = `url('${img.src}')`;
+                        lens.style.backgroundSize = `${img.offsetWidth * 2}px ${img.offsetHeight * 2}px`; // Adjust the zoom factor here (e.g., 2 for 2x zoom)
+                        lens.style.backgroundPosition = `${bgX}% ${bgY}%`;
+                    });
+                })
+
+                const imgContainer = document.querySelector('.img-container');
+                const zoomLens = document.querySelector('.zoom-lens');
+                const img = document.querySelector('.zoomable-image');
+                const zoomedImg = document.querySelector('.zoomed-image');
+
+                // Show the zoom lens and image on mouse enter
+                imgContainer.addEventListener('mouseenter', () => {
+                    zoomLens.style.display = 'block';
+                    zoomedImg.style.display = 'block';
+                });
+
+                // Move the lens and zoomed image on mouse move
+                imgContainer.addEventListener('mousemove', (e) => {
+                    const rect = img.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    // Set the lens position
+                    const lensX = Math.max(0, Math.min(x - zoomLens.offsetWidth / 2, rect.width - zoomLens.offsetWidth));
+                    const lensY = Math.max(0, Math.min(y - zoomLens.offsetHeight / 2, rect.height - zoomLens.offsetHeight));
+                    zoomLens.style.left = lensX + 'px';
+                    zoomLens.style.top = lensY + 'px';
+
+                    // Set the zoomed image position
+                    zoomedImg.style.left = '-' + (lensX * 2) + 'px'; // Adjust zoom level
+                    zoomedImg.style.top = '-' + (lensY * 2) + 'px'; // Adjust zoom level
+                });
+
+                // Hide the lens and zoomed image on mouse leave
+                imgContainer.addEventListener('mouseleave', () => {
+                    zoomLens.style.display = 'none';
+                    zoomedImg.style.display = 'none';
+                });
+
+
+
+
+                constimg = document.getElementById('zoomable-image');
+
+                let isZoomed = false;
+
+                img.addEventListener('dblclick', (event) => {
+                    if (isZoomed) {
+                        img.style.transform = 'scale(1)'; // Reset zoom
+                    } else {
+                        // Calculate the mouse position relative to the image
+                        const rect = img.getBoundingClientRect();
+                        const x = event.clientX - rect.left; // Get x position
+                        const y = event.clientY - rect.top; // Get y position
+
+                        // Set transform origin to the mouse position
+                        img.style.transformOrigin = `${x}px ${y}px`;
+                        img.style.transform = 'scale(2)'; // Zoom in
+                    }
+                    isZoomed = !isZoomed; // Toggle zoom state
+                });
+            </script>
+
+
+</body>
+
+</html>
