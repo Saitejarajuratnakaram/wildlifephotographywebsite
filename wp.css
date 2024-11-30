@@ -1,0 +1,867 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    } */
+    
+    .container1 {
+    max-width: 100%; 
+    margin: 0 auto;
+    /* padding: 30px; */
+    }
+    
+    /* Image Section */
+    .image-section img {
+    width: 90%;
+    height: 550px;
+    }
+    
+    /* Text Section */
+    .text-section {
+    padding: 20px;
+    }
+    
+    .text-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    
+    .text-section .intro {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 20px;
+    }
+    
+    .text-section .description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+    }
+    
+    /* Progress Section */
+    .progress-section {
+    margin-top: 30px;
+    }
+    
+    .progress-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    }
+    
+    .progress-item .label {
+    flex: 1;
+    font-size: 1em;
+    color: #333;
+    }
+    
+    .progress-bar {
+    flex: 2;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+    margin-right: 10px;
+    }
+    
+    .progress-bar .progress {
+    background-color: #f8b400;
+    height: 100%;
+    border-radius: 10px;
+    }
+    
+    .progress-item .percentage {
+    font-size: 1em;
+    color: #666;
+    }
+    
+    /* Second Section Styling */
+    .second-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 100%;
+    }
+    
+    .left-section {
+    flex: 1;
+    padding-right: 20px;
+    }
+    
+    .left-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    }
+    
+    .quote-box {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+    }
+    
+    .quote {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    }
+    
+    .author {
+    font-weight: bold;
+    }
+    
+    .designation {
+    color: #666;
+    font-size: 0.9em;
+    }
+    
+    .right-section {
+    flex: 2;
+    padding-left: 20px;
+    }
+    
+    .right-section h1 {
+    font-size: 2.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 20px;
+    }
+    
+    .right-section .intro {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 20px;
+    }
+    
+    .features {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+    
+    .feature-item .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+    }
+    
+    .nature-icon {
+    background-color: #9B870C;
+    background-image: url('nature-icon.png'); /* Add the appropriate image or replace with an icon */
+    background-size: cover;
+    }
+    
+    .geo-icon {
+    background-color: #F8B400;
+    background-image: url('geo-icon.png'); /* Add the appropriate image */
+    background-size: cover;
+    }
+    
+    .video-icon {
+    background-color: #333;
+    background-image: url('video-icon.png'); /* Add the appropriate image */
+    background-size: cover;
+    }
+    
+    .feature-text h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    }
+    
+    .right-column {
+    margin-top: 30px;
+    }
+    
+    .right-column .checklist {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .right-column .checklist li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+    position: relative;
+    }
+    
+    .right-column .checklist li::before {
+    content: "✔";
+    color: #F8B400;
+    font-size: 1.2em;
+    margin-right: 10px;
+    }
+    
+    .read-more {
+    background-color: #F8B400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    }
+    
+    .read-more:hover {
+    background-color: #333;
+    }
+    
+    /* Third Section Styling */
+    .third-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+    width: 100%; 
+    }
+    
+    .left-section img {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    }
+    
+    .right-section {
+    flex: 2;
+    padding-left: 20px;
+    }
+    
+    .right-section h1 {
+    font-size: 2.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 20px;
+    }
+    
+    .right-section .intro {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 20px;
+    }
+    
+    .testimonial-container {
+    display: flex;
+    gap: 20px;
+    }
+    
+    .testimonial {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+    flex: 1;
+    }
+    
+    .testimonial-text {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+    }
+    
+    .client-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    }
+    
+    .client-title {
+    color: #999;
+    font-size: 0.9em;
+    }
+    
+    /* Best Work Section */
+    .best-work-section {
+    max-width: 100%; 
+    margin: 50px 0;
+    padding: 20px;
+    }
+    
+    .work-header {
+    text-align: left;
+    margin-bottom: 30px;
+    }
+    
+    .work-header h1 {
+    font-size: 48px;
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+    }
+    
+    .work-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.5;
+    }
+    
+    /* Work Gallery Styling */
+    .work-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    }
+    
+    .work-item {
+    width: 32%;
+    background-color: #fff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px; /* Space between items */
+    }
+    
+    .work-item img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    }
+    
+    .work-info {
+    padding: 20px;
+    }
+    
+    .work-info h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    }
+    
+    .work-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+    }
+    
+    .read-more {
+    text-decoration: none;
+    font-size: 16px;
+    color: #0073e6;
+    position: relative;
+    font-weight: bold;
+    }
+    
+    .read-more:hover {
+    color: #005bb5;
+    }
+    
+    .read-more::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f0b323;
+    transition: width 0.3s ease-in-out;
+    }
+    
+    .read-more:hover::after {
+    width: 100%;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+    .work-gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .work-item {
+        width: 100%; /* Full width for smaller screens */
+    }
+    
+    .second-section,
+    .third-section {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+    
+    .left-section,
+    .right-section {
+        width: 100%; /* Full width for both sections */
+        padding: 0; /* Remove padding for smaller screens */
+    }
+    }
+    
+    /* Progress Bar Animation */
+    .progress {
+    height: 100%;
+    background-color: #4caf50;
+    animation: progress-animation 1s ease-in-out forwards;
+    }
+    
+    @keyframes progress-animation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+    }
+    
+    
+    .right-section {
+    padding: 20px; /* Add some padding */
+    }
+    
+    .features {
+    display: flex;
+    flex-direction: column; /* Stack features vertically */
+    margin-bottom: 20px; /* Space between features and checklist */
+    }
+    
+    .feature-item {
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 15px; /* Space between feature items */
+    }
+    
+    .icon {
+    width: 40px; /* Set a fixed width */
+    height: 40px; /* Set a fixed height */
+    margin-right: 10px; /* Space between icon and text */
+    background-size: cover; /* Cover the icon area */
+    }
+    
+    .nature-icon {
+    background-image: url('path/to/nature-icon.png'); /* Replace with your icon path */
+    }
+    
+    .geo-icon {
+    background-image: url('path/to/geo-icon.png'); /* Replace with your icon path */
+    }
+    
+    .video-icon {
+    background-image: url('path/to/video-icon.png'); /* Replace with your icon path */
+    }
+    
+    .feature-text {
+    display: flex; /* Allow text to wrap */
+    flex-direction: column; /* Stack heading and paragraph */
+    }
+    
+    .right-column {
+    margin-top: 20px; /* Space between features and checklist */
+    }
+    
+    .checklist {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .checklist li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+    position: relative;
+    }
+    
+    .checklist li::before {
+    content: "✔"; /* Checkbox or icon */
+    color: #F8B400; /* Icon color */
+    font-size: 1.2em;
+    margin-right: 10px;
+    }
+    
+    .read-more {
+    margin-top: 15px; /* Space above the button */
+    padding: 10px 20px; /* Button padding */
+    background-color: #F8B400; /* Button background color */
+    color: #fff; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    }
+    
+    .read-more:hover {
+    background-color: #F6A600; /* Darken on hover */
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Stack vertically on small screens */
+    }
+    }
+    
+    .nature-icon {
+    color: #4CAF50; /* Green */
+    font-size: 2rem; /* Adjust size as needed */
+    }
+    
+    .geo-icon {
+    color: #2196F3; /* Blue */
+    font-size: 2rem; /* Adjust size as needed */
+    }
+    
+    .video-icon {
+    color: #FF5722; /* Deep Orange */
+    font-size: 2rem; /* Adjust size as needed */
+    }
+    
+    .feature-item {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    margin-bottom: 15px; /* Space between items */
+    }
+    
+    .feature-text {
+    margin-left: 10px; /* Space between icon and text */
+    }
+    
+    .image-section {
+    position: relative;
+    }
+    
+    .img-container {
+    position: relative;
+    display: inline-block;
+    }
+    
+    .zoomable-image {
+    width: 100%; /* Adjust this as needed */
+    height: auto; /* Maintain aspect ratio */
+    }
+    
+    .magnifier {
+    position: absolute;
+    border: 3px solid #888; /* Border color of the magnifying glass */
+    border-radius: 50%;
+    cursor: none;
+    width: 100px; /* Size of the magnifying glass */
+    height: 100px; /* Size of the magnifying glass */
+    visibility: hidden; /* Hidden by default */
+    background-repeat: no-repeat;
+    background-size: 200%; /* Scale image for the magnifying effect */
+    }
+    
+    
+    .image-section {
+    position: relative;
+    }
+    
+    .img-container {
+    position: relative;
+    display: inline-block; /* Align with image */
+    }
+    
+    .zoomable-image {
+    width: 600px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s ease; /* Smooth transition */
+    }
+    
+    .zoom-lens {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Border around the zoom lens */
+    border-radius: 50%; /* Make the lens circular */
+    cursor: zoom-in; /* Show zoom cursor */
+    width: 100px; /* Adjust lens size */
+    height: 100px; /* Adjust lens size */
+    visibility: hidden; /* Initially hidden */
+    background: rgba(255, 255, 255, 0.3); /* Optional: background for visibility */
+    background-image: url('tiger.jpg'); /* Set background image for zoom */
+    background-size: 1200px; /* Double the size for zoom effect */
+    background-repeat: no-repeat;
+    transition: visibility 0.2s ease; /* Transition for visibility */
+    }
+    
+    .progress-section {
+    margin: 20px 0;
+    }
+    
+    .progress-item {
+    margin-bottom: 20px;
+    }
+    
+    .progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+    
+    .progress {
+    height: 20px;
+    background: #4caf50;
+    width: 0; /* Start from 0% width */
+    transition: width 1s ease; /* Smooth transition */
+    }
+    
+    .percentage {
+    margin-top: 5px;
+    font-weight: bold;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .image-section {
+        position: relative; /* For positioning the zoom lens */
+        display: flex; /* Aligning items in the center */
+        justify-content: center; /* Centering the image */
+    }
+    
+    .img-container {
+        position: relative; /* For the image and zoom lens to overlap */
+        overflow: hidden; /* Prevent overflow of the zoom lens */
+    }
+    
+    .zoomable-image {
+        display: block; /* Remove extra space below image */
+        max-width: 100%; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+        transition: transform 0.2s; /* Optional for smooth scaling */
+    }
+    
+    .zoom-lens {
+        position: absolute;
+        border: 2px solid #000; /* Border of the lens */
+        cursor: crosshair; /* Change cursor to crosshair */
+        width: 150px; /* Width of the zoom lens */
+        height: 150px; /* Height of the zoom lens */
+        opacity: 0.4; /* Semi-transparent lens */
+        pointer-events: none; /* Disable interaction with the lens */
+        display: none; /* Hide by default */
+    }
+    
+    
+    
+    
+    
+    .image-section {
+        position: relative; /* For positioning the zoom lens */
+        display: flex; /* Aligning items in the center */
+        justify-content: center; /* Centering the image */
+        margin: 20px; /* Optional spacing */
+    }
+    
+    .img-container {
+        position: relative; /* For the image and zoom lens to overlap */
+        overflow: hidden; /* Prevent overflow of the zoom lens */
+    }
+    
+    .zoomable-image {
+        display: block; /* Remove extra space below image */
+        max-width: 100%; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .zoom-lens {
+        position: absolute;
+        border: 2px solid #000; /* Border of the lens */
+        cursor: crosshair; /* Change cursor to crosshair */
+        width: 100px; /* Width of the zoom lens */
+        height: 100px; /* Height of the zoom lens */
+        opacity: 0.5; /* Semi-transparent lens */
+        pointer-events: none; /* Disable interaction with the lens */
+        display: none; /* Hide by default */
+        border-radius: 50%; /* Optional: make the lens circular */
+        background-repeat: no-repeat; /* Ensure background doesn't repeat */
+        background-size: 200%; /* Increase zoom level */
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .image-section {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .img-container {
+        position: relative;
+    }
+    
+    .zoomable-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .zoom-lens {
+        position: absolute;
+        border: 2px solid #000;
+        width: 100px; /* Size of the lens */
+        height: 100px; /* Size of the lens */
+        opacity: 0.5;
+        pointer-events: none;
+        display: none; /* Initially hidden */
+    }
+    
+    .zoomed-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%; /* Adjust as necessary for zoom */
+        height: 200%; /* Adjust as necessary for zoom */
+        display: none; /* Initially hidden */
+        pointer-events: none;
+        z-index: 10; /* Ensure it's above the original image */
+    }
+    
+    
+    
+    
+    
+    
+    
+    .image-section {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .img-container {
+        position: relative;
+    }
+    
+    .zoomable-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .zoom-lens {
+        position: absolute;
+        border: 2px solid #000;
+        width: 100px; /* Size of the lens */
+        height: 100px; /* Size of the lens */
+        opacity: 0.5;
+        pointer-events: none;
+        display: none; /* Initially hidden */
+    }
+    
+    .zoomed-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%; /* Adjust as necessary for zoom */
+        height: 200%; /* Adjust as necessary for zoom */
+        display: none; /* Initially hidden */
+        pointer-events: none;
+        z-index: 10; /* Ensure it's above the original image */
+    }
+    
+    
+    
+    
+    
+    
+    .right-section {
+        padding: 20px; /* Add padding around the text */
+    }
+    
+    h1 {
+        font-size: 2em; /* Size of the heading */
+        margin-bottom: 20px; /* Space below the heading */
+    }
+    
+    p {
+        font-size: 1.1em; /* Size of the paragraph text */
+        line-height: 1.6; /* Line height for readability */
+        margin-bottom: 20px; /* Space below paragraphs */
+    }
+    
+    .intro {
+        list-style-type: disc; /* Bullet points for the list */
+        padding-left: 20px; /* Indentation for the list */
+    }
+    
+    .intro li {
+        margin-bottom: 10px; /* Space between list items */
+        font-size: 1em; /* Size of the list items */
+        color: #444; /* List item color */
+    }
+    
+    
+    
+    
+    @media (max-width: 992px) {
+        .second-section,
+        .third-section {
+            flex-direction: column; /* Stack sections on smaller screens */
+        }
+    
+        .left-section,
+        .right-section {
+            width: 100%; /* Full width for both sections */
+            padding: 0; /* Remove padding for smaller screens */
+        }
+    
+        .work-item {
+            width: 100%; /* Full width for smaller screens */
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .features {
+            flex-direction: column; /* Stack vertically on small screens */
+        }
+    
+        .read-more {
+            width: 100%; /* Full width button on small screens */
+        }
+    
+        .work-item {
+            margin-bottom: 20px; /* Space between items */
+        }
+    }
+    
+    
+    /* Image Section */
+    .image-section {
+        display: flex;                /* Use flexbox for layout */
+        justify-content: center;      /* Center horizontally */
+        align-items: center;          /* Center vertically */
+        margin: 20px 0;              /* Optional spacing */
+        height: 100%;                 /* Ensure it takes full height if needed */
+    }
+    
+    .img-container {
+        display: flex;                /* Make the container a flexbox */
+        justify-content: center;      /* Center the image inside */
+        align-items: center;          /* Center the image vertically */
+        overflow: hidden;             /* Prevent overflow of the zoom lens */
+    }
+    
+    .zoomable-image {
+        max-width: 100%;              /* Responsive image */
+        height: auto;                 /* Maintain aspect ratio */
+        display: block;               /* Remove extra space below image */
+    }
+    
