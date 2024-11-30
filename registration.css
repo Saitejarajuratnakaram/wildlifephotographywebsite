@@ -1,0 +1,81 @@
+
+
+.l-registration-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-left: 427px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.l-input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.l-input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.l-input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.l-input-group input:focus {
+    border-color: #ffcc00;
+}
+
+input.l-error {
+    border-color: red;
+}
+
+.l-error-message {
+    color: red;
+    font-size: 14px;
+    display: none;
+}
+
+.l-success-message {
+    display: none;
+    color: green;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+@media (max-width: 480px) {
+    .l-registration-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,38 @@
+
+
+.ter-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.ter-back-to-top {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ffcc00;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ter-back-to-top:hover {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .ter-container {
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
